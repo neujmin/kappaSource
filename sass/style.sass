@@ -1,0 +1,165 @@
+// *!
+// Theme Name: Kappa
+// Theme URI: http://underscores.me/
+// Author: Jakub Kowalczyk
+// Author URI: http://jakubkowalczyk.com
+// Description: Description
+// Version: 1.0.0
+// License: GNU General Public License v2 or later
+// License URI: http://www.gnu.org/licenses/gpl-2.0.html
+// Text Domain: kappa
+// Tags:
+
+// This theme, like WordPress, is licensed under the GPL.
+// Use it to make something cool, have fun, and share what you've learned with others.
+
+// Kappa is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+// Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+// Normalizing styles have been helped along thanks to the fine work of
+// Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+
+
+// /*--------------------------------------------------------------
+// >>> TABLE OF CONTENTS:
+// ----------------------------------------------------------------
+// # Normalize
+// # Typography
+// # Elements
+// # Forms
+// # Navigation
+// 	## Links
+// 	## Menus
+// # Accessibility
+// # Alignments
+// # Clearings
+// # Widgets
+// # Content
+// 	## Posts and pages
+// 	## Asides
+// 	## Comments
+// # Infinite scroll
+// # Media
+// 	## Captions
+// 	## Galleries
+// --------------------------------------------------------------*/
+@import "variables-site/variables-site"
+@import "mixins/mixins-master"
+
+// /*--------------------------------------------------------------
+// # Normalize
+// --------------------------------------------------------------*/
+@import "normalize"
+
+// /*--------------------------------------------------------------
+// # Typography
+// --------------------------------------------------------------*/
+@import "typography/typography"
+
+// /*--------------------------------------------------------------
+// # Elements
+// --------------------------------------------------------------*/
+@import "elements/elements"
+
+// /*--------------------------------------------------------------
+// # Forms
+// --------------------------------------------------------------*/
+@import "forms/forms"
+
+// /*--------------------------------------------------------------
+// # Navigation
+// --------------------------------------------------------------*/
+@import "navigation/navigation"
+
+// --------------------------------------------------------------
+// # Accessibility
+// --------------------------------------------------------------
+@import "modules/accessibility"
+
+// /*--------------------------------------------------------------
+// # Alignments
+// --------------------------------------------------------------*/
+@import "modules/alignments"
+
+// /*--------------------------------------------------------------
+// # Clearings
+// --------------------------------------------------------------*/
+@import "modules/clearings"
+
+// /*--------------------------------------------------------------
+// # Widgets
+// --------------------------------------------------------------*/
+@import "site/secondary/widgets"
+
+// /*--------------------------------------------------------------
+// # Content
+// --------------------------------------------------------------*/
+@import "site/site"
+
+// /*--------------------------------------------------------------
+// # Infinite scroll
+// --------------------------------------------------------------*/
+@import "modules/infinite-scroll"
+
+// /*--------------------------------------------------------------
+// # Media
+// --------------------------------------------------------------*/
+@import "media/media"
+
+
+ul
+	margin: 0
+	padding: .5em 0 .5em .5em
+	list-style-type: none
+
+
+section
+	width: 90%
+	max-width: 1080px
+	margin: 2em auto
+	padding: 2em
+	@extend %clearfix
+
+	&:nth-of-type(even)
+		background: rgba(0,0,0, 0.05)
+
+	h2
+		margin-top: 0
+
+
+.aextend-1
+	.aextend-1-1
+		float: left
+		padding: 1em
+		background: red
+	
+	.aextend-1-2
+		@extend .aextend-1-1
+		opacity: .85
+
+	.aextend-1-3
+		@extend .aextend-1-1
+		opacity: .7
+
+.aextend-2
+	%box-extend-2
+		float: left
+		padding: 1em
+
+	.aextend-2-1
+		@extend %box-extend-2
+		background: green
+
+	.aextend-2-2
+		@extend %box-extend-2
+		background: red
+
+	.aextend-2-3
+		@extend %box-extend-2
+		background: blue
+
+.maps
+	$properties: (background: red, color: blue, font-size: 1em, font-family: (Helvetica, arial, sans-serif))
+
+	.foo
+		color: map-get($properties, color)		
