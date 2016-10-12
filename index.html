@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>kappaSource</title>
+	<meta name="robots" content="noindex,follow">
+	<link rel="stylesheet" id="kappa-style-css" href="sass/style.css" type="text/css" media="all">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://jakubk.2ap.pl/kappa/wp-content/themes/kappa/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js?ver=4.6.1"></script>
+	<script type="text/javascript" src="http://jakubk.2ap.pl/kappa/wp-content/themes/kappa/js/vendor/bxslider-v4.2.5.js?ver=4.6.1"></script>
+	<script type="text/javascript" src="http://jakubk.2ap.pl/kappa/wp-content/themes/kappa/js/main.js?ver=4.6.1"></script>	
+</head>
+
+<body>
+
+	<section>
+		<h1>Testy Sass i przydatne klasy</h1>
+	</section>
+
+	<section class="aextend-1">
+		<h2>Extends</h2>
+		<div class="aextend-1-1">
+			<code>
+				<p>aextend-1-1</p>
+				<ul>
+					<li>float: left</li>
+					<li>padding: 1em</li>
+					<li>background: red</li>
+				</ul>
+			</code>
+		</div>
+		<div class="aextend-1-2">
+			<code>
+				<p>aextend-1-2</p>
+				<ul>
+					<li>@extend .aextend-1-1</li>
+					<li>opacity: .75</li>
+					<li>&nbsp</li>
+				</ul>
+			</code>
+		</div>
+		<div class="aextend-1-3">
+			<code>
+				<p>aextend-1-3</p>			
+				<ul>
+					<li>@extend .aextend-1-1</li>
+					<li>opacity: .5</li>
+					<li>&nbsp</li>
+				</ul>
+			</code>
+		</div>
+	</section>
+
+	<section class="aextend-2">
+		<h2>Placeholder selectors</h2>
+		<code>
+			<p>%box-extend-2</p>
+			<ul>			
+				<li>float: left</li>
+				<li>padding: 1em</li>
+			</ul>
+		</code>
+		<div class="aextend-2-1">
+			<code>
+				<p>aextend-2</p>
+				<ul>
+					<li>@extend %box-extend-2</li>
+					<li>background: green</li>
+				</ul>
+			</code>
+		</div>
+		<div class="aextend-2-2">
+			<code>
+				<p>aextend-1</p>
+				<ul>
+					<li>@extend %box-extend-2</li>
+					<li>background: red</li>
+				</ul>
+			</code>
+		</div>
+		<div class="aextend-2-3">
+			<code>
+				<p>aextend-1</p>
+				<ul>
+					<li>@extend %box-extend-2</li>
+					<li>background: blue</li>
+				</ul>
+			</code>
+		</div>
+	</section>
+
+	<section class="maps">
+		<h2>Maps</h2>
+		<code>
+			<ul>
+				<li>$properties: (background: red, color: blue, font-size: 1em, font-family: (Helvetica, arial, sans-serif))</li>
+				<li>
+					.foo
+					<ul>
+						<li>color: map-get($properties, color)</li>
+					</ul>
+				</li>
+			</ul>			
+		</code>
+		<div class="foo">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia omnis explicabo consequuntur, minima consequatur. Molestias excepturi quis quisquam ipsam aliquam, minus ducimus aliquid, hic odit saepe eaque nihil, temporibus, labore.
+		</div>
+	</section>
+
+</body>
+</html>

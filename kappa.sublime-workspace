@@ -1,0 +1,582 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mar",
+				"margin-bottom: "
+			],
+			[
+				"back",
+				"background-position: "
+			],
+			[
+				"bac",
+				"background: "
+			],
+			[
+				"border",
+				"border-radius: "
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"font",
+				"font-family: "
+			],
+			[
+				"stron",
+				"strong-color"
+			],
+			[
+				"co",
+				"color: "
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"fon",
+				"font-size: "
+			],
+			[
+				"max",
+				"max-width: "
+			],
+			[
+				"wid",
+				"width: "
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"column",
+				"column-gap: "
+			],
+			[
+				"tra",
+				"transition: "
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "style.sass",
+			"settings":
+			{
+				"buffer_size": 12632,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<?php\n/**\n * The template for displaying front page.\n *\n *\n * @package Kappa\n */\n\nget_header(); ?>\n\n\t<div id=\"primary\" class=\"content-area page front-page\">\n\t\t<main id=\"main\" class=\"site-main\" role=\"main\">\n\n\t\t\t<section class=\"intro\">\n\n<!-- \t\t\t\t<div class='box'>\n\t\t\t\t\t<div class='wave one'></div>\n\t\t\t\t\t<div class='wave two'></div>\n\t\t\t\t\t<div class='wave three'></div>\n\t\t\t\t</div> -->\n\n\t\t\t\ta>ul>li*4\n\n\t\t\t\t<div class=\"background\">\n\t\t\t\t</div><!-- background -->\n\n\t\t\t\t<div class=\"welcome text\">\n\t\t\t\t\t<span>Witam</span>\n\t\t\t\t\t<!-- <h1>High-end Coding Services</h1> -->\n\t\t\t\t\t<!-- <h1>Wysokiej jakości strony internetowe oraz grafika użytkową</h1> -->\n\t\t\t\t\t<h1>Wysokiej jakości grafika oraz strony internetowe</h1>\n\t\t\t\t\t<!-- <p>We do PSD to HTML, WordPress Development, Custom JavaScript Programming and Email Templates</p> -->\n\t\t\t\t\t<p>Zajmuję się projektowaniem stron, motywów do Wordpressa, grafiką użytkową oraz czymśtam</p>\n\t\t\t\t</div>\n\n\t\t\t\t<div class=\"preview\">\n\t\t\t\t\t<img src=\"http://jakubk.2ap.pl/kappa/wp-content/uploads/2016/06/Zrzut_ekranu_2016_03_12_o_12.00.40-1.jpg\" alt=\"\">\n\t\t\t\t\t<!-- <span></span>\n\t\t\t\t\t<p></p> -->\n\t\t\t\t</div>\n\n\t\t\t</section><!-- class=\"intro\" -->\n\n\t\t\t<section class=\"simple\">\n\t\t\t\t<span>WHAT WE BELIEVE IN</span>\n\t\t\t\t<h2>MISSION STATEMENT</h2>\n\t\t\t\t<p>Our mission is to deliver boutique, high-class coding services, by providing perfection in timing and code execution, fully tailored to the client's needs. All of this at reasonable price.</p>\n\t\t\t</section>\n\n\t\t\t<section class=\"benefits\">\n\t\t\t\t<h2>BOUTIQUE BENEFITS</h2>\n\t\t\t\t<h3>Quality</h3>\n\t\t\t\t<p>High-class code is not a PLUS. It is a MUST!</p>\n\t\t\t\t<ul>\n\t\t\t\t\t<li>8 years of web development experience</li>\n\t\t\t\t\t<li>clean code by our own coding standards</li>\n\t\t\t\t\t<li>extremely high attention to details</li>\n\t\t\t\t</ul>\n\t\t\t</section>\n\n\t\t\t<section class=\"idea\">\n\t\t\t\t<h2>PORTFOLIO</h2>\n\t\t\t\t<h3>Get an idea of what we do</h3>\n\t\t\t\t<p>Nothing speaks louder about what we do than our work itself. Experience the makeover of different designs into high-class code. See how the whole process works, check out samples of our actual code, and even get an idea of the pricing.</p>\n\t\t\t\t<a href=\"\">See Portfolio</a>\n\t\t\t</section>\n\n<!-- \t\t\t<section class=\"about-me\">\n\t\t\t\t<span class=\"pre-title\"><?php the_field('pre_title'); ?></span>\n\t\t\t\t<h1><?php the_field('title'); ?></h1>\n\t\t\t\t\n\t\t\t\t<?php if( have_rows('socila_links') ): ?>\n\n\t\t\t\t\t<div class=\"social-links\">\n\t\t\t\t\t\t<ul>\n\n\t\t\t\t\t\t<?php while( have_rows('social_links') ): the_row(); \n\n\t\t\t\t\t\t\t// vars\n\t\t\t\t\t\t\t$link = get_sub_field('link');\n\t\t\t\t\t\t\t$image = get_sub_field('image');\t\t\t\t\t\n\t\t\t\t\t\t\t?>\n\n\t\t\t\t\t\t\t<li class=\"link\">\n\t\t\t\t\t\t\t\t<?php if( $link ): ?><a href=\"<?php echo $link; ?>\"><?php endif; ?>\n\t\t\t\t\t\t\t\ttest\n\t\t\t\t\t\t\t\t<?php if( $link ): ?></a><?php endif; ?>\n\t\t\t\t\t\t\t</li>\n\n\t\t\t\t\t\t<?php endwhile; ?>\n\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t</div>\n\n\t\t\t\t<?php endif; ?>\n\n\t\t\t\t<div class=\"content\">\n\t\t\t\t\t<?php the_field('content'); ?>\n\t\t\t\t</div>\n\n\t\t\t</section> -->\n\n<!-- \t\t\t<section class=\"featured-work\">\n\t\t\t\t<span class=\"pre-title\"><?php the_field('pre_newest_project'); ?></span>\n\n\t\t\t\t<?php\n\n\t\t\t\t$post_object = get_field('newest_project');\n\n\t\t\t\tif( $post_object ): \n\n\t\t\t\t\t// override $post\n\t\t\t\t\t$post = $post_object;\n\t\t\t\t\tsetup_postdata( $post ); \n\n\t\t\t\t\t?>\n\t\t\t\t    \n\t\t\t\t    <h2><?php the_title(); ?></h2>\n\t\t\t\t    <div class=\"post-meta\">\n\t\t\t\t    \t<div class=\"excerpt\">\n\t\t\t\t\t    \t<div>\n\t\t\t\t\t    \t\t<span><?php the_excerpt(); ?></span>\n\t\t\t\t\t    \t</div>\t\t\t\t    \t\t\n\t\t\t\t    \t</div>\t\t\t\t\t\t\n\t\t\t\t\t</div>\n\t\t\t\t    <div class=\"content\">\n\t\t\t\t    \t<?php the_content(); ?>\n\t\t\t\t    \t<p>\n\t\t\t\t    \t\t<a class=\"newest_project_link\" href=\"<?php the_permalink(); ?>\">view project</a>\n\t\t\t\t    \t</p>\n\t\t\t\t    </div>\n\t\t\t\t    \n\t\t\t\t    \t\n\t\t\t\t    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>\n\t\t\t\t<?php endif; ?>\n\n\t\t\t\t<?php\n\t\t\t\t\t// echo '<pre>';\n\t\t\t\t\t//     print_r( get_field('newest_project')  );\n\t\t\t\t\t// echo '</pre>';\n\t\t\t\t\t// die;\n\t\t\t\t?>\n\n\t\t\t</section> -->\n<!-- \t\t\t<section class=\"latest-projects\">\n\t\t\t\t<span class=\"pre-title\">latest projects</span>\n\t\t\t\t<h2>Get an overview of my latest projects</h2>\n\n\t\t\t\t<?php if( have_rows('projects_overview') ): ?>\n\n\t\t\t\t<div class=\"tiles\">\n\n\t\t\t\t\t<ul class=\"projects\">\n\n\t\t\t\t\t<?php while( have_rows('projects_overview') ): the_row(); \n\n\t\t\t\t\t\t// vars\n\t\t\t\t\t\t$post_object = get_sub_field('project');\n\n\n\t\t\t\t\t\t?>\n\n\t\t\t\t\t\t<li class=\"project\">\n\t\t\t\t\t\t\t<?php\n\t\t\t\t\t\t\tif( $post_object ): \n\n\t\t\t\t\t\t\t// override $post\n\t\t\t\t\t\t\t$post = $post_object;\n\t\t\t\t\t\t\tsetup_postdata( $post );\n\t\t\t\t\t\t\t?>\n\t\t\t\t    \t\t<a href=\"<?php the_permalink(); ?>\">\t\n\t\t\t\t    \t\t<h3><?php the_title(); ?></h3>\n\t\t\t\t    \t\t<?php the_post_thumbnail(); ?>\n\t\t\t\t    \t\t<div>\n\t\t\t\t    \t\t\t<?php the_content(); ?>\n\t\t\t\t    \t\t</div>\n\t\t\t\t    \t\t</a>\n\t\t\t\t    \t\n\t\t\t\t    \t\t<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>\n\t\t\t\t\t\t\t<?php endif; ?>\n\t\t\t\t\t\t</li>\n\n\t\t\t\t\t<?php endwhile; ?>\n\n\t\t\t\t\t</ul>\n\n\t\t\t\t</div>\n\n\t\t\t\t<?php endif; ?>\n\n\t\t\t\t<a href=\"<?php the_field('portfolio_link'); ?>\">see portfolio</a>\n\t\t\t</section> -->\n\n\n\t\t\t<?php\n\t\t\twhile ( have_posts() ) : the_post();\n\n\t\t\t\t// get_template_part( 'template-parts/content', 'page' );\n\n\t\t\t\t// If comments are open or we have at least one comment, load up the comment template.\n\t\t\t\tif ( comments_open() || get_comments_number() ) :\n\t\t\t\t\tcomments_template();\n\t\t\t\tendif;\n\n\t\t\tendwhile; // End of the loop.\n\t\t\t?>\n\n\t\t</main><!-- #main -->\n\t</div><!-- #primary -->\n\n<?php\n// get_sidebar();\nget_footer();\n",
+			"file": "front-page.php",
+			"file_size": 5476,
+			"file_write_time": 131194710421504036,
+			"settings":
+			{
+				"buffer_size": 5480,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/mixins/_mixins-master.scss",
+			"settings":
+			{
+				"buffer_size": 1350,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/main.js",
+			"settings":
+			{
+				"buffer_size": 3702,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "Package Control: inst",
+		"selected_items":
+		[
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/httpd/Work/kappa/wp-content/themes/kappa",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/js"
+	],
+	"file_history":
+	[
+		"/C/Users/Clint Eastwood/Desktop/WinSCP.ini",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/D/Pobrane/wifiinfoview/readme.txt",
+		"/D/httpd/Work/eurocontract/wp-config.php",
+		"/C/Users/Clint Eastwood/Desktop/strona/jk2background.svg",
+		"/C/Users/Clint Eastwood/AppData/Local/Temp/ai14747222954.tmp/ai14747222954.txt",
+		"/C/Users/Clint Eastwood/AppData/Local/Temp/ai14747175462.tmp/ai14747175462.txt",
+		"/C/Users/Clint Eastwood/AppData/Local/Temp/ai14747219373.tmp/ai14747219373.txt",
+		"/D/Pobrane/SVG-Export-2016-9-7-15-50.svg",
+		"/C/Users/Clint Eastwood/AppData/Local/Temp/ai14747159471.tmp/ai14747159471.txt",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/front-page.php",
+		"/D/httpd/Work/eurocontract/wp-content/themes/kappa/sass/mixins/_mixins-master.scss",
+		"/D/httpd/Work/eurocontract/wp-content/themes/kappa/style.sass",
+		"/D/Pobrane/TEST/main.js",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/inc/script-style.php",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/sass/typography/_headings.scss",
+		"/D/httpd/Work/kappa/wp-content/plugins/advanced-custom-fields-pro/pro/admin/views/settings-updates.php",
+		"/D/httpd/Work/kappa/wp-content/plugins/advanced-custom-fields-pro/acf.php",
+		"/D/httpd/Work/eurocontract/wp-content/themes/kappa/inc/filters.php",
+		"/D/httpd/Work/eurocontract/wp-content/themes/kappa/inc/header.php",
+		"/D/httpd/Work/eurocontract/wp-content/themes/kappa/inc/jetpack.php",
+		"/D/httpd/Work/eurocontract/wp-content/themes/kappa/inc/menu.php",
+		"/D/httpd/Work/eurocontract/wp-content/themes/kappa/inc/options.php",
+		"/D/httpd/Work/eurocontract/wp-content/themes/kappa/inc/script-style.php",
+		"/D/httpd/Work/eurocontract/wp-content/themes/kappa/inc/setup.php",
+		"/D/httpd/Work/eurocontract/wp-content/themes/kappa/inc/template-tags.php",
+		"/D/httpd/Work/eurocontract/wp-content/themes/kappa/inc/title.php",
+		"/D/httpd/Work/eurocontract/wp-content/themes/kappa/inc/various-functions.php",
+		"/D/httpd/Work/katarzynatutko/wp-content/themes/kappa/inc/options.php",
+		"/D/httpd/Work/katarzynatutko/wp-content/themes/kappa/inc/title.php",
+		"/D/httpd/Work/katarzynatutko/wp-content/themes/kappa/inc/setup.php",
+		"/D/httpd/Work/katarzynatutko/wp-content/themes/kappa/inc/script-style.php",
+		"/D/httpd/Work/katarzynatutko/wp-content/themes/kappa/inc/various-functions.php",
+		"/D/httpd/Work/perfect-smile-work-backup/wp-content/themes/perfectsmile/category.php",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/sass/navigation/_links.scss",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/sass/typography/_typography.scss",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/sass/typography/_copy.scss",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/sass/elements/_elements.scss",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/sass/style.sass",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/inc/filters.php",
+		"/D/httpd/Work/jkwiatkowski/wp-content/themes/jkwiatkowski/inc/filters.php",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/header.php",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/style.sass",
+		"/C/Users/Clint Eastwood/AppData/Local/Temp/scp57087/usr/home/jakubk/domains/jakubk.2ap.pl/public_html/work/swojak/wp-config.php",
+		"/D/httpd/Work/perfect-smile-work-backup/wp-content/themes/perfectsmile/css/main.css",
+		"/D/httpd/Work/perfect-smile-work-backup/wp-content/themes/perfectsmile/footer.php",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/sass/mixins/_mixins-master.scss",
+		"/D/httpd/Work/jkwiatkowski/wp-content/themes/jkwiatkowski/inc/various-functions.php",
+		"/D/httpd/Work/jkwiatkowski/wp-config.php",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/template/information/information.tpl",
+		"/D/httpd/Work/jan-netzel/inc/portraits.inc",
+		"/D/httpd/Work/jan-netzel/inc/acts.inc",
+		"/D/httpd/Work/jan-netzel/inc/architecture.inc",
+		"/D/httpd/Work/jan-netzel/inc/sea.inc",
+		"/D/httpd/Work/jan-netzel/inc/shipyard.inc",
+		"/D/httpd/Work/jan-netzel/index.php",
+		"/D/Cloud/Dropbox/wujek zdjecia/strona/architecture.inc",
+		"/D/Cloud/Dropbox/wujek zdjecia/strona/acts.inc",
+		"/D/httpd/Work/kappa/wp-content/plugins/advanced-custom-fields-pro/admin/views/settings-tools.php",
+		"/D/Pobrane/acfpro530-themelord.com/acfpro530-themelord.com/advanced-custom-fields-pro/advanced-custom-fields-pro/readme.txt",
+		"/D/Pobrane/acfpro530-themelord.com/acfpro530-themelord.com/readme.txt",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/style.css",
+		"/C/Users/Clint Eastwood/AppData/Roaming/Sublime Text 3/Packages/User/SASS_clint.sublime-build",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/sass/_mockups.sass",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/sass/_mockups.scss",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/template-parts/front-page.php",
+		"/D/httpd/Work/perfect-smile-work-backup/wp-content/themes/perfectsmile/js/main.js",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/template/common/footer.tpl",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/template/checkout/checkout.tpl",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/template/common/header.tpl",
+		"/D/httpd/Work/dajak/wp-content/themes/dajak/gallery.php",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/template/product/special.tpl",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/template/module/bestseller.tpl",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/template/module/category.tpl",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/template/module/featured.tpl",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/template/module/filter.tpl",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/template/module/information.tpl",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/template/module/slideshow.tpl",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/template/module/latest.tpl",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/template/module/special.tpl",
+		"/D/httpd/Work/dajak/wp-content/themes/dajak/sass/style.scss",
+		"/D/httpd/Work/dajak/wp-content/themes/dajak/offer-rest.php",
+		"/D/httpd/Work/dajak/wp-content/themes/dajak/offer-family.php",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/template/common/home.tpl",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/css/main.css",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/template/product/category.tpl",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/template/product/product.tpl",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/index.php",
+		"/D/httpd/Work/dajak/wp-content/themes/dajak/functions.php",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/functions.php",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/page.php",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/single.php",
+		"/C/Users/Clint Eastwood/AppData/Roaming/Sublime Text 3/Packages/Autoprefixer/readme.md",
+		"/D/Pobrane/Adobe Illustrator CC 2015 19.0.0 (64-Bit) + Crack/ReadMe.txt",
+		"/C/Users/Clint Eastwood/AppData/Local/Temp/scp35192/home/httpd/html/ekologia/Kuklinski/menu/home.txt",
+		"/D/httpd/Work/Kuklinski/menu/home.txt",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/template/information/contact.tpl",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/controller/product/category.php",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/language/polish/module/information.php",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/language/polish/module/category.php",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/language/polish/polish.php",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/include/modules_content_top.php",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/theme/weterynek/include/head.php",
+		"/C/Users/Clint Eastwood/AppData/Roaming/Sublime Text 3/Packages/User/Autoprefixer.sublime-settings",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/style — kopia.css",
+		"/C/Users/Clint Eastwood/AppData/Roaming/Sublime Text 3/Packages/Autoprefixer/Autoprefixer.sublime-settings",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/footer.php",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/sass/_normalize.scss",
+		"/D/httpd/Work/weterynek.pl/public_html/config.php",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/js/customizer.js",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/search.php",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/archive.php",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa — v.1 - _s/style.css",
+		"/D/httpd/Work/weterynek.pl/public_html/admin/config.php",
+		"/D/httpd/Work/perfect-smile-work-backup/wp-content/themes/perfectsmile/seotop.php",
+		"/C/Users/Clint Eastwood/AppData/Local/Temp/scp56511/domains/weterynek.pl/public_html/.htaccess",
+		"/C/Users/Clint Eastwood/AppData/Local/Temp/scp53946/domains/weterynek.pl/public_html/catalog/controller/product/search.php",
+		"/C/Users/Clint Eastwood/AppData/Local/Temp/scp52051/domains/weterynek.pl/public_html/catalog/controller/common/seo_url.php",
+		"/D/httpd/Work/weterynek.pl/public_html/catalog/view/javascript/common.js",
+		"/D/httpd/Work/weterynek.pl/public_html/.htaccess",
+		"/C/Users/Clint Eastwood/AppData/Local/Temp/scp12032/domains/weterynek.pl/public_html/catalog/view/javascript/common.js",
+		"/D/httpd/Work/weterynek.pl/public_html/.htaccess.txt",
+		"/D/httpd/Work/spa/wp-content/themes/spa/css/main.css",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/sass/style.scss",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/sass/style.css.map",
+		"/D/httpd/Work/kappa/wp-content/themes/kappa/sass/style.css",
+		"/C/Users/Clint Eastwood/AppData/Local/Temp/scp02588/domains/weterynek.pl/public_html/.htaccess.txt",
+		"/C/Users/Clint Eastwood/AppData/Local/Temp/scp07799/domains/weterynek.pl/public_html/admin/config.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\httpd\\Work\\kappa\\wp-content\\plugins\\advanced-custom-fields-pro",
+			"D:\\httpd\\Work\\weterynek.pl\\public_html",
+			"D:\\httpd\\Work\\weterynek.pl\\public_html\\catalog\\view\\theme\\weterynek\\template"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";",
+			"animation",
+			"W W W . N U L L 2 4 . I R",
+			"red",
+			"Author",
+			"author",
+			"410",
+			"W W W . N U L L 2 4 . I R - ",
+			"lang",
+			"W zależności od miejsca dostawy, towaru, ceny można negocjować telefonicznie.",
+			"widok",
+			"werand",
+			"weranda",
+			"27",
+			"rest",
+			"cat",
+			"weterynek",
+			"encod",
+			"www",
+			"@import \"",
+			";",
+			"dopasuj",
+			"famil",
+			"reload",
+			"famil",
+			"189",
+			"214",
+			"menu",
+			"<img src=\"##GBOOK_TEMPLATE##images/emoticons/smile.gif\" border=\"0\" alt=\":)\" title=\":)\" />",
+			"<img src=\"##GBOOK_TEMPLATE##images/emoticons/wink.gif\" border=\"0\" alt=\";)\" title=\";)\" />",
+			"&#64;",
+			"&#46;",
+			"&amp;"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"460",
+			"@import \"sass/",
+			"",
+			":)",
+			";)",
+			"@",
+			".",
+			"&"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "style.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12632,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5512,
+								5512
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3037.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "front-page.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5480,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								395,
+								386
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "sass/mixins/_mixins-master.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1350,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								793,
+								793
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 461.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3702,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3672,
+								3130
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1710.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 123.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/SASS_clint.sublime-build",
+	"project": "kappa.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\httpd\\Work\\eurocontract\\wp-content\\themes\\kappa\\eurocontract.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 293.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
