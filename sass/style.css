@@ -674,7 +674,7 @@ section {
   float: left;
   padding: 1em; }
 .aextend-2 .aextend-2-1 {
-  background: green; }
+  background: yellow; }
 .aextend-2 .aextend-2-2 {
   background: red; }
 .aextend-2 .aextend-2-3 {
@@ -682,5 +682,15 @@ section {
 
 .maps .foo {
   color: blue; }
+
+.basic-mixin .button {
+  background-color: #b4d455;
+  border: 1px solid #879f40;
+  border-radius: 5px;
+  padding: 0.25em 0.5em; }
+  .basic-mixin .button:hover {
+    cursor: pointer;
+    background-color: #99b448;
+    border-color: #6c7f33; }
 
 /*# sourceMappingURL=style.css.map */

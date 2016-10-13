@@ -108,5 +108,33 @@
 		</div>
 	</section>
 
+	<section class="basic-mixin">
+		<h2>Basic mixin</h2>
+		<div class="button">
+			<code>
+				@mixin button($color)
+					background-color: $color
+					border: 1px solid mix(black, $color, 25%)
+					border-radius: 5px
+					padding: .25em .5em
+					
+					&:hover
+						cursor: pointer
+						background-color: mix(black, $color, 15%)
+						border-color: mix(black, $color, 40%)
+
+				.button
+					@include button(#b4d455)
+
+			</code>
+		</div>
+	</section>
+
+	<section class="cookies">
+		<h2>Ciasteczka</h2>
+		<p>Zgodnie z obowiązującymi przepisami prawa, informuję, że strona wykorzystuje cookies. Mechanizm cookies używany na stronie nie ma na celu pozyskiwania jakichkolwiek informacji o odwiedzających stronę, a stosowany jest tylko i wyłącznie w celu dostarczania autorowi strony danych statystycznych o ruchu odwiedzających na stronie oraz w celu świadczenia usług w wysokim standardzie.</p>
+		<p>Masz możliwość odmowy gromadzenia ciasteczek. Możesz to zrobić zmieniając ustawienia swojej przeglądarki. Możesz ustawić długość ich przechowywania lub po prostu wyłączyć tę opcję.</p>
+	</section>
+
 </body>
 </html>

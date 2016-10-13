@@ -148,7 +148,7 @@ section
 
 	.aextend-2-1
 		@extend %box-extend-2
-		background: green
+		background: yellow
 
 	.aextend-2-2
 		@extend %box-extend-2
@@ -162,4 +162,40 @@ section
 	$properties: (background: red, color: blue, font-size: 1em, font-family: (Helvetica, arial, sans-serif))
 
 	.foo
-		color: map-get($properties, color)		
+		color: map-get($properties, color)	
+
+.basic-mixin
+
+	@mixin button($color)
+		background-color: $color
+		border: 1px solid mix(black, $color, 25%)
+		border-radius: 5px
+		padding: .25em .5em
+		
+		&:hover
+			cursor: pointer
+			background-color: mix(black, $color, 15%)
+			border-color: mix(black, $color, 40%)
+
+	.button
+		@include button(#b4d455)
+
+		
+
+	@mixin button($color)
+		@include button-static
+
+		background-color: $color
+		border-color: mix(black, $color, 25%)
+	  
+		&:hover
+			background-color: mix(black, $color, 15%)
+			border-color: mix(black, $color, 40%)
+
+	@mixin button-static
+		border: 1px solid
+		border-radius: 5px
+		padding: .25em .5em
+		
+		&:hover
+			cursor: pointer
